@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "huangmingji<ming.j.huang@gmail.com>",
+    "classifications": [ "Abp", "Lemon", "HttpApi.Client", "Template"],
+    "identity": "Lemon.Abp.Template.HttpApi.Client",
+    "name": "Lemon.Abp.Template.HttpApi.Client",
+    "shortName": "lemon-abp-httpapi-client",
+    "tags": {
+      "language": "C#",
+      "type": "project"
+    },
+    "sourceName": "Lemon.Abp.Template",
+    "preferNameDirectory": true
+  }

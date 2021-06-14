@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+
+    <IsPackable>true</IsPackable>
+      <PackageType>Template</PackageType>
+      <PackageVersion>1.0.0</PackageVersion>
+      <PackageId>Lemon.Abp.Template.Application.Contracts</PackageId>
+      <Title>Lemon Abp Application Contracts Templates</Title>
+      <Authors>huangmingji</Authors>
+      <Description>Templates to use when creating an application for abp.</Description>
+      <PackageTags>dotnet-new;templates;abp</PackageTags>
+      <PackageProjectUrl>https://github.com/huangmingji/dotnet-abp-template</PackageProjectUrl>
+      <RepositoryUrl>https://github.com/huangmingji/dotnet-abp-template</RepositoryUrl>
+      <RepositoryType>git</RepositoryType>
+      <PackageLicenseExpression>MIT</PackageLicenseExpression>
+      
+      <IncludeContentInPack>true</IncludeContentInPack>
+      <IncludeBuildOutput>false</IncludeBuildOutput>
+      <ContentTargetFolders>content</ContentTargetFolders>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <Content Include="src\Lemon.Abp.Template.Application.Contracts\*" Exclude="src\Lemon.Abp.Template.Application.Contracts\bin\**;src\Lemon.Abp.Template.Application.Contracts\obj\**;src\Lemon.Abp.Template.Application.Contracts\logs\**;src\Lemon.Abp.Template.Application.Contracts\files\**;src\Lemon.Abp.Template.Application.Contracts\node_modules\**;src\Lemon.Abp.Template.Application.Contracts\wwwroot\**;src\Lemon.Abp.Template.Application.Contracts\.idea\**;src\Lemon.Abp.Template.Application.Contracts\out\**;" />
+    <Compile Remove="Lemon.Abp.Template.Application.Contracts\*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IdentityModel" Version="5.1.0" />
+    <PackageReference Include="Volo.Abp.Ddd.Application.Contracts" Version="4.3.2" />
+    <PackageReference Include="Volo.Abp.FluentValidation" Version="4.3.2" />
+  </ItemGroup>
+
+</Project>

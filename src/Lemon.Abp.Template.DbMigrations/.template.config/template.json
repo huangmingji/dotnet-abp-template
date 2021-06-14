@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "huangmingji<ming.j.huang@gmail.com>",
+    "classifications": [ "Abp", "Lemon", "DbMigrations", "Template"],
+    "identity": "Lemon.Abp.Template.DbMigrations",
+    "name": "Lemon.Abp.Template.DbMigrations",
+    "shortName": "lemon-abp-dbmigrations",
+    "tags": {
+      "language": "C#",
+      "type": "project"
+    },
+    "sourceName": "Lemon.Abp.Template",
+    "preferNameDirectory": true
+  }

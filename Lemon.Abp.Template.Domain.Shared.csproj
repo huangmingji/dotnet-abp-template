@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    
+    <IsPackable>true</IsPackable>
+    <PackageType>Template</PackageType>
+    <PackageVersion>1.0.0</PackageVersion>
+    <PackageId>Lemon.Abp.Template.Domain.Shared</PackageId>
+    <Title>Lemon Abp Domain Shared Templates</Title>
+    <Authors>huangmingji</Authors>
+    <Description>Templates to use when creating an application for abp.</Description>
+    <PackageTags>dotnet-new;templates;abp</PackageTags>
+    <PackageProjectUrl>https://github.com/huangmingji/dotnet-abp-template</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/huangmingji/dotnet-abp-template</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="src\Lemon.Abp.Template.Domain.Shared\*" Exclude="src\Lemon.Abp.Template.Domain.Shared\bin\**;src\Lemon.Abp.Template.Domain.Shared\obj\**;src\Lemon.Abp.Template.Domain.Shared\logs\**;src\Lemon.Abp.Template.Domain.Shared\files\**;src\Lemon.Abp.Template.Domain.Shared\node_modules\**;src\Lemon.Abp.Template.Domain.Shared\wwwroot\**;src\Lemon.Abp.Template.Domain.Shared\.idea\**;src\Lemon.Abp.Template.Domain.Shared\out\**;" />
+    <Compile Remove="Lemon.Abp.Template.Domain.Shared\*" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Localization" Version="4.3.2" />
+    <PackageReference Include="Volo.Abp.Validation" Version="4.3.2" />
+  </ItemGroup>
+
+</Project>

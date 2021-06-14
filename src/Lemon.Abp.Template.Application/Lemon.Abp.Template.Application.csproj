@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lemon.Abp.Template.Application.Contracts\Lemon.Abp.Template.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Lemon.Abp.Template.Domain\Lemon.Abp.Template.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="4.3.2" />
+    <PackageReference Include="Volo.Abp.Caching" Version="4.3.2" />
+    <PackageReference Include="Volo.Abp.Ddd.Application" Version="4.3.2" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+</Project>

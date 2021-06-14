@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+      <TargetFramework>net5.0</TargetFramework>
+      
+      <IsPackable>true</IsPackable>
+      <PackageType>Template</PackageType>
+      <PackageVersion>1.0.0</PackageVersion>
+      <PackageId>Lemon.Abp.Template.Application</PackageId>
+      <Title>Lemon Abp Application Templates</Title>
+      <Authors>huangmingji</Authors>
+      <Description>Templates to use when creating an application for abp.</Description>
+      <PackageTags>dotnet-new;templates;abp</PackageTags>
+      <PackageProjectUrl>https://github.com/huangmingji/dotnet-abp-template</PackageProjectUrl>
+      <RepositoryUrl>https://github.com/huangmingji/dotnet-abp-template</RepositoryUrl>
+      <RepositoryType>git</RepositoryType>
+      <PackageLicenseExpression>MIT</PackageLicenseExpression>
+      
+      <IncludeContentInPack>true</IncludeContentInPack>
+      <IncludeBuildOutput>false</IncludeBuildOutput>
+      <ContentTargetFolders>content</ContentTargetFolders>
+    </PropertyGroup>
+  
+    <ItemGroup>
+      <Content Include="src\Lemon.Abp.Template.Application\*" Exclude="src\Lemon.Abp.Template.Application\bin\**;src\Lemon.Abp.Template.Application\obj\**;src\Lemon.Abp.Template.Application\logs\**;src\Lemon.Abp.Template.Application\files\**;src\Lemon.Abp.Template.Application\node_modules\**;src\Lemon.Abp.Template.Application\wwwroot\**;src\Lemon.Abp.Template.Application\.idea\**;src\Lemon.Abp.Template.Application\out\**;" />
+      <Compile Remove="Lemon.Abp.Template.Application\*" />
+    </ItemGroup>
+  
+    <ItemGroup>
+      <ProjectReference Include="..\Lemon.Abp.Template.Application.Contracts\Lemon.Abp.Template.Application.Contracts.csproj" />
+      <ProjectReference Include="..\Lemon.Abp.Template.Domain\Lemon.Abp.Template.Domain.csproj" />
+    </ItemGroup>
+  
+    <ItemGroup>
+      <PackageReference Include="Volo.Abp.AutoMapper" Version="4.3.2" />
+      <PackageReference Include="Volo.Abp.Caching" Version="4.3.2" />
+      <PackageReference Include="Volo.Abp.Ddd.Application" Version="4.3.2" />
+    </ItemGroup>
+  
+  </Project>

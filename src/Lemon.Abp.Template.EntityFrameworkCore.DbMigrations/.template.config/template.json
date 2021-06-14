@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "huangmingji<ming.j.huang@gmail.com>",
+    "classifications": [ "Abp", "Lemon", "EntityFrameworkCore.DbMigrations", "Template"],
+    "identity": "Lemon.Abp.Template.EntityFrameworkCore.DbMigrations",
+    "name": "Lemon.Abp.Template.EntityFrameworkCore.DbMigrations",
+    "shortName": "lemon-abp-efcore-dbmigrations",
+    "tags": {
+      "language": "C#",
+      "type": "project"
+    },
+    "sourceName": "Lemon.Abp.Template",
+    "preferNameDirectory": true
+  }

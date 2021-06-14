@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lemon.Abp.Template.Application.Contracts\Lemon.Abp.Template.Application.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="4.3.2" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    
+    <IsPackable>true</IsPackable>
+    <PackageType>Template</PackageType>
+    <PackageVersion>1.0.0</PackageVersion>
+    <PackageId>Lemon.Abp.Template.HttpApi</PackageId>
+    <Title>Lemon Abp HttpApi Templates</Title>
+    <Authors>huangmingji</Authors>
+    <Description>Templates to use when creating an application for abp.</Description>
+    <PackageTags>dotnet-new;templates;abp</PackageTags>
+    <PackageProjectUrl>https://github.com/huangmingji/dotnet-abp-template</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/huangmingji/dotnet-abp-template</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="src\Lemon.Abp.Template.HttpApi\*" Exclude="src\Lemon.Abp.Template.HttpApi\bin\**;src\Lemon.Abp.Template.HttpApi\obj\**;src\Lemon.Abp.Template.HttpApi\logs\**;src\Lemon.Abp.Template.HttpApi\files\**;src\Lemon.Abp.Template.HttpApi\node_modules\**;src\Lemon.Abp.Template.HttpApi\wwwroot\**;src\Lemon.Abp.Template.HttpApi\.idea\**;src\Lemon.Abp.Template.HttpApi\out\**;" />
+    <Compile Remove="Lemon.Abp.Template.HttpApi\*" />
+  </ItemGroup>
+
+</Project>

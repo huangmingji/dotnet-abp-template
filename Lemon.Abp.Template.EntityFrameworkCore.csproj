@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lemon.Abp.Template.Domain\Lemon.Abp.Template.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.EntityFrameworkCore" Version="4.3.2" />
+    <PackageReference Include="Volo.Abp.EntityFrameworkCore.PostgreSql" Version="4.3.2" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    
+    <IsPackable>true</IsPackable>
+    <PackageType>Template</PackageType>
+    <PackageVersion>1.0.0</PackageVersion>
+    <PackageId>Lemon.Abp.Template.EntityFrameworkCore</PackageId>
+    <Title>Lemon Abp EntityFrameworkCore Templates</Title>
+    <Authors>huangmingji</Authors>
+    <Description>Templates to use when creating an application for abp.</Description>
+    <PackageTags>dotnet-new;templates;abp</PackageTags>
+    <PackageProjectUrl>https://github.com/huangmingji/dotnet-abp-template</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/huangmingji/dotnet-abp-template</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="src\Lemon.Abp.Template.EntityFrameworkCore\*" Exclude="src\Lemon.Abp.Template.EntityFrameworkCore\bin\**;src\Lemon.Abp.Template.EntityFrameworkCore\obj\**;src\Lemon.Abp.Template.EntityFrameworkCore\logs\**;src\Lemon.Abp.Template.EntityFrameworkCore\files\**;src\Lemon.Abp.Template.EntityFrameworkCore\node_modules\**;src\Lemon.Abp.Template.EntityFrameworkCore\wwwroot\**;src\Lemon.Abp.Template.EntityFrameworkCore\.idea\**;src\Lemon.Abp.Template.EntityFrameworkCore\out\**;" />
+    <Compile Remove="Lemon.Abp.Template.EntityFrameworkCore\*" />
+  </ItemGroup>
+
+</Project>
