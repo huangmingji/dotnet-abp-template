@@ -10,4 +10,7 @@
     <PackageReference Include="Volo.Abp.FluentValidation" Version="4.3.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Lemon.Abp.Template.Domain\Lemon.Abp.Template.Domain.csproj" />
+  </ItemGroup>
 </Project>

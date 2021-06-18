@@ -44,7 +44,8 @@ dotnet add ./src/$ProjectModule.EntityFrameworkCore/$ProjectModule.EntityFramewo
 dotnet add ./src/$ProjectModule.EntityFrameworkCore.DbMigrations/$ProjectModule.EntityFrameworkCore.DbMigrations.csproj reference ./src/$ProjectModule.EntityFrameworkCore/$ProjectModule.EntityFrameworkCore.csproj
 
 dotnet add ./src/$ProjectModule.Application/$ProjectModule.Application.csproj reference ./src/$ProjectModule.Application.Contracts/$ProjectModule.Application.Contracts.csproj
-dotnet add ./src/$ProjectModule.Application/$ProjectModule.Application.csproj reference ./src/$ProjectModule.Domain/$ProjectModule.Domain.csproj
+
+dotnet add ./src/$ProjectModule.Application.Contracts/$ProjectModule.Application.Contracts.csproj reference ./src/$ProjectModule.Domain/$ProjectModule.Domain.csproj
 
 dotnet add ./src/$ProjectModule.HttpApi/$ProjectModule.HttpApi.csproj reference ./src/$ProjectModule.Application.Contracts/$ProjectModule.Application.Contracts.csproj
 
